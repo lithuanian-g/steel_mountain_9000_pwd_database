@@ -1,7 +1,11 @@
-from secret import password
+from secret import passwords
 
 username = 'sunflower'
 
-print(f"My credentials\n{username}:", end="")
-for i in range(len(password)):
-    print("*",end="")
+print(f"Steel Mountain 7000x Password Database")
+for entry in passwords:
+    for username, password in entry.items():
+        print(f"{username}:",end="")
+        for asterisk in range(len(password)):
+            print(f"*", end="")
+        print("")
