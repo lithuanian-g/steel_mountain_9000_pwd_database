@@ -2,7 +2,7 @@ from secret import passwords
 
 username = 'sunflower'
 
-print(f"Steel Mountain 7000x Password Database")
+print(f"Steel Mountain 9000x Password Database")
 for entry in passwords:
     for username, password in entry.items():
         print(f"{username}:",end="")
